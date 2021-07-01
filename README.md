@@ -77,48 +77,48 @@ s.	bandalls:bdda5f03128bcbdfa78d8934529048cf - 	   <b>Bandalls </b> <br />
 2.	Level of protections offered to the passwords:
 After going through the provided password dump file and decrypting them, it has been found that all those hash values are the result of using MD5 algorithm to decrypt the password and following is what I found on my own research about MD5.
 
-MD5 creates 512-bit blocks that contains 16 words of 32-bit each resulting in 128-bit message. Protection is provided in different stages.
-a.	Message digest value is initialized using hexadecimal numerical values.
-b.	In every individual stage, four message digest is passed through those changes the current data block along with the values passed from the previous block.
-c.	The value obtained from the final block is then MD5 digest for current block.
-d.	No two-password ca have same hash value.
-So, this must be practically not decryptable. But this is not always the case like in Flame malware in 2012. If anyone got the hash value from any password database leakage, then it can be decrypted in few seconds or a minute.
+MD5 creates 512-bit blocks that contains 16 words of 32-bit each resulting in 128-bit message. Protection is provided in different stages. <br />
+a.	Message digest value is initialized using hexadecimal numerical values.<br />
+b.	In every individual stage, four message digest is passed through those changes the current data block along with the values passed from the previous block.<br />
+c.	The value obtained from the final block is then MD5 digest for current block.<br />
+d.	No two-password ca have same hash value.<br />
+So, this must be practically not decryptable. But this is not always the case like in Flame malware in 2012. If anyone got the hash value from any password database leakage, then it can be decrypted in few seconds or a minute.<br />
 
 <!-- Q3 -->
 ## Q3
-3.	To make cracking much harder for the hacker in the event of a password database leaking again we can do:
-a.	We can use hashing with salt to slow down the password cracking from the obtained rainbow table. No methods to prevent password cracking is safe but this is a lot of work.
-b.	We are using MD5 algorithm. We can do better. We can use algorithms like bcrypt – specify complexity that affects the speed at which hashing and guessing occurs, scrypt – prevents parallel cracking.
-c.	Above two takes lot of resources to authenticate one user and for that we can use Server-relief that uses browser or user’s system for the required resources.
-d.	Required length of the password can be set to least 16 that increases the cracking time.
-e.	No username and password similarity and not even similarity with the brand.
-f.	Advising users not to use dictionary word instead use letters characters, numbers all jumbled.
-g.	Promote use of password generator tool that generates and saves the password.
+3.	To make cracking much harder for the hacker in the event of a password database leaking again we can do:<br />
+a.	We can use hashing with salt to slow down the password cracking from the obtained rainbow table. No methods to prevent password cracking is safe but this is a lot of work.<br />
+b.	We are using MD5 algorithm. We can do better. We can use algorithms like bcrypt – specify complexity that affects the speed at which hashing and guessing occurs, scrypt – prevents parallel cracking.<br />
+c.	Above two takes lot of resources to authenticate one user and for that we can use Server-relief that uses browser or user’s system for the required resources.<br />
+d.	Required length of the password can be set to least 16 that increases the cracking time.<br />
+e.	No username and password similarity and not even similarity with the brand.<br />
+f.	Advising users not to use dictionary word instead use letters characters, numbers all jumbled.<br />
+g.	Promote use of password generator tool that generates and saves the password.<br />
 
 <!-- Q4 -->
 ## Q4
-4.	Upon inspecting and cracking password from the given dump file this is what I have:
-a.	The least password length is 6 and maximum is 14.
-b.	All the passwords are mostly letter and numbers and only 3 got characters.
-c.	Only passwords are hashed using MD5 algorithm. 
-d.	No password is hashed + salted.
-e.	Company accepts any type of password like all number, all letter, all character that are easily crack able.
+4.	Upon inspecting and cracking password from the given dump file this is what I have:<br />
+a.	The least password length is 6 and maximum is 14.<br />
+b.	All the passwords are mostly letter and numbers and only 3 got characters.<br />
+c.	Only passwords are hashed using MD5 algorithm. <br />
+d.	No password is hashed + salted.<br />
+e.	Company accepts any type of password like all number, all letter, all character that are easily crack able.<br />
 
 <!-- Q5 -->
 ## Q5
-5.	There are some preventive measures that the organization can use to make password cracking harder.
-a.	Using more secure hashing algorithm like SHA, bcrypt, scrypt instead of MD5.
-b.	Length of password be at least 16.
-c.	No dictionary password acceptable.
-d.	Password should contain capital letter, number, symbols, and non-dictionary.
-e.	All the password encryption to be done using salt and hash.
-f.	Even suggest passwords with own password generator tool.
+5.	There are some preventive measures that the organization can use to make password cracking harder.<br />
+a.	Using more secure hashing algorithm like SHA, bcrypt, scrypt instead of MD5.<br />
+b.	Length of password be at least 16.<br />
+c.	No dictionary password acceptable.<br />
+d.	Password should contain capital letter, number, symbols, and non-dictionary.<br />
+e.	All the password encryption to be done using salt and hash.<br />
+f.	Even suggest passwords with own password generator tool.<br />
 
 <!-- EMAIL -->
 ## Email
 Dear Ma’am/Sir,
-After obtaining the leaked hashes I tried to crack the password, which was not even hard, I have found some vulnerabilities in the password policy of the organization. The purpose of this email is to present you my findings on the organization’s current password policy and my recommendation to prevent cracking of the password and increase the time involved in cracking it.
-All the passwords cracked shows that the organization is using the MD5 algorithm for the security of user data authentication. This is an outdated and easily compromise able hashing algorithm. 
+After obtaining the leaked hashes I tried to crack the password, which was not even hard, I have found some vulnerabilities in the password policy of the organization. The purpose of this email is to present you my findings on the organization’s current password policy and my recommendation to prevent cracking of the password and increase the time involved in cracking it.<br />
+All the passwords cracked shows that the organization is using the MD5 algorithm for the security of user data authentication. This is an outdated and easily compromise able hashing algorithm. <br />
 There are even online tools that can crack the obtained hashed file like https://crackstation.net/ and https://www.dcode.fr/md5-hash . We can enter the hash from the obtained passwd_dump.txt file into the provided text field and upon selecting decrypt button, respective passwords are generated in fraction of second. 
 From the cracked password, 
 •	minimum length of the password is found to be 6
