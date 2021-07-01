@@ -73,7 +73,7 @@ s.	bandalls:bdda5f03128bcbdfa78d8934529048cf - 	   <b>Bandalls </b> <br />
 1.	Hashing algorithm used: MD5.
 
 <!-- Q2 -->
-##Q2
+## Q2
 2.	Level of protections offered to the passwords:
 After going through the provided password dump file and decrypting them, it has been found that all those hash values are the result of using MD5 algorithm to decrypt the password and following is what I found on my own research about MD5.
 
@@ -85,7 +85,7 @@ d.	No two-password ca have same hash value.
 So, this must be practically not decryptable. But this is not always the case like in Flame malware in 2012. If anyone got the hash value from any password database leakage, then it can be decrypted in few seconds or a minute.
 
 <!-- Q3 -->
-##Q3
+## Q3
 3.	To make cracking much harder for the hacker in the event of a password database leaking again we can do:
 a.	We can use hashing with salt to slow down the password cracking from the obtained rainbow table. No methods to prevent password cracking is safe but this is a lot of work.
 b.	We are using MD5 algorithm. We can do better. We can use algorithms like bcrypt – specify complexity that affects the speed at which hashing and guessing occurs, scrypt – prevents parallel cracking.
@@ -96,7 +96,7 @@ f.	Advising users not to use dictionary word instead use letters characters, num
 g.	Promote use of password generator tool that generates and saves the password.
 
 <!-- Q4 -->
-##Q4
+## Q4
 4.	Upon inspecting and cracking password from the given dump file this is what I have:
 a.	The least password length is 6 and maximum is 14.
 b.	All the passwords are mostly letter and numbers and only 3 got characters.
@@ -105,7 +105,7 @@ d.	No password is hashed + salted.
 e.	Company accepts any type of password like all number, all letter, all character that are easily crack able.
 
 <!-- Q5 -->
-##Q5
+## Q5
 5.	There are some preventive measures that the organization can use to make password cracking harder.
 a.	Using more secure hashing algorithm like SHA, bcrypt, scrypt instead of MD5.
 b.	Length of password be at least 16.
