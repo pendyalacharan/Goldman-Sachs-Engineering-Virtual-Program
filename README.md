@@ -40,7 +40,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project/program is about Crack leaked password database where we need to crack the password from the given <a href="https://github.com/BishalBudhathoki/Goldman-Sachs-Engineering-Virtual-Program/blob/main/passwd_dump.txt">password dump file</a> that contains username and there hashed password, finding out the hashing alogrithm used for authentication, level of protection the current hashing algorithm provides, preventive measures, what the password dump file tells about it and preventive measures that the organisation can take to minimise the password database attack and make authentication strong along with an email/memo for the organisation and references used.
+This project/program is about Crack leaked password database where we need to crack the password from the given <a href="https://github.com/BishalBudhathoki/Goldman-Sachs-Engineering-Virtual-Program/blob/main/passwd_dump.txt"> password dump file that contains the username and there hashed password, finding out the hashing algorithm used for authentication, level of protection the current hashing algorithm provides, preventive measures, what the password dump file tells about it and preventive measures that the organization can take to minimize the password database attack and make authentication strong along with an email/memo for the organization and references used.
 
 ### Cracked-password
 
