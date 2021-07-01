@@ -116,7 +116,7 @@ f.	Even suggest passwords with own password generator tool.<br />
 
 <!-- EMAIL -->
 ## Email
-Dear Ma’am/Sir,
+Dear Ma’am/Sir,<br />
 After obtaining the leaked hashes I tried to crack the password, which was not even hard, I have found some vulnerabilities in the password policy of the organization. The purpose of this email is to present you my findings on the organization’s current password policy and my recommendation to prevent cracking of the password and increase the time involved in cracking it.<br />
 All the passwords cracked shows that the organization is using the MD5 algorithm for the security of user data authentication. This is an outdated and easily compromise able hashing algorithm. <br />
 There are even online tools that can crack the obtained hashed file like https://crackstation.net/ and https://www.dcode.fr/md5-hash . We can enter the hash from the obtained passwd_dump.txt file into the provided text field and upon selecting decrypt button, respective passwords are generated in fraction of second. <br /><br />
