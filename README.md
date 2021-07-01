@@ -115,7 +115,7 @@ e.	All the password encryption to be done using salt and hash.
 f.	Even suggest passwords with own password generator tool.
 
 <!-- EMAIL -->
-## email
+## Email
 Dear Ma’am/Sir,
 After obtaining the leaked hashes I tried to crack the password, which was not even hard, I have found some vulnerabilities in the password policy of the organization. The purpose of this email is to present you my findings on the organization’s current password policy and my recommendation to prevent cracking of the password and increase the time involved in cracking it.
 All the passwords cracked shows that the organization is using the MD5 algorithm for the security of user data authentication. This is an outdated and easily compromise able hashing algorithm. 
@@ -144,7 +144,7 @@ Master of Information Technology
 Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- ACKNOWLEDGEMENTS -->
-## acknowledgements
+## Acknowledgements
 https://crackstation.net/ <br />
 https://en.wikipedia.org/wiki/Hash_function_security_summary  <br />
 https://searchsecurity.techtarget.com/definition/digital-signature  <br />
