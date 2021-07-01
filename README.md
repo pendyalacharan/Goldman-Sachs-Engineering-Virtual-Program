@@ -119,21 +119,21 @@ f.	Even suggest passwords with own password generator tool.<br />
 Dear Ma’am/Sir,
 After obtaining the leaked hashes I tried to crack the password, which was not even hard, I have found some vulnerabilities in the password policy of the organization. The purpose of this email is to present you my findings on the organization’s current password policy and my recommendation to prevent cracking of the password and increase the time involved in cracking it.<br />
 All the passwords cracked shows that the organization is using the MD5 algorithm for the security of user data authentication. This is an outdated and easily compromise able hashing algorithm. <br />
-There are even online tools that can crack the obtained hashed file like https://crackstation.net/ and https://www.dcode.fr/md5-hash . We can enter the hash from the obtained passwd_dump.txt file into the provided text field and upon selecting decrypt button, respective passwords are generated in fraction of second. <br />
+There are even online tools that can crack the obtained hashed file like https://crackstation.net/ and https://www.dcode.fr/md5-hash . We can enter the hash from the obtained passwd_dump.txt file into the provided text field and upon selecting decrypt button, respective passwords are generated in fraction of second. <br /><br />
 From the cracked password, <br />
 •	minimum length of the password is found to be 6.<br />
 •	no password requirements, hence, any kind of password is accepted.<br />
 •	All passwords are hashed with MD5 algorithm.<br />
-•	No password is salted along with hash.<br />
+•	No password is salted along with hash.<br /><br />
 From above findings, here are some of my recommendations to strengthen the authentication and prevent the password cracking for the better password policy:<br />
 •	Not accepting dictionary password, no username, date of birth, organization name in the password.<br />
 •	Length of the password to be at least 16 that contains minimum 1 capital letter, small letter, number, and symbols.<br />
 •	Providing strong password generator for the users with the option to set their own password.<br />
 •	Suggesting user to use password generator/manager tools.<br />
 •	Using better algorithm for encrypting password like bcrypt, scrypt, SHA (Secured Hashed Algorithm).<br />
-•	Using Salt along with the hash.<br />
+•	Using Salt along with the hash.<br /><br />
 These are my findings and recommendations. Hope this helps the organization to strengthen the authentication of user and prevent password cracking in the future.<br />
-Thank you,<br />
+Thank you,<br /><br />
 Regards,<br />
 Bishal Budhathoki,<br />
 Master of Information Technology<br />
